@@ -8,7 +8,7 @@ namespace new_relic
         {
             await next(context);
         }
-        private static IDisposable AddParameter(string key, string value, bool addToNewRelic = false)
+        public static IDisposable AddParameter(string key, string value, bool addToNewRelic = false)
         {
             if (addToNewRelic)
             {
